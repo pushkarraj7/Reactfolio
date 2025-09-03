@@ -6,8 +6,8 @@ import codefolio from "../../Assets/Projects/codefolio.jpeg";
 import feast from "../../Assets/Projects/feast.jpeg";
 import gfg from "../../Assets/Projects/gfg.jpeg";
 import cupid from "../../Assets/Projects/cupid.jpeg";
-import shortly from "../../Assets/Projects/shortly.jpeg";
-import nit from "../../Assets/Projects/nit.jpeg";
+import dashboard from "../../Assets/Projects/dashboard.png";
+import nit from "../../Assets/Projects/nit.png";
 
 function Projects() {
   return (
@@ -21,14 +21,26 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={cupid}
+              imgPath={dashboard}
               isBlog={false}
-              title="Cupid AI"
-              description="Introducing the Pickup Line Generator, a fun and quirky website that uses the power of AI to generate cheesy pickup lines that are sure to make you smile. With just a click of a button, you can get a new pickup line to use on your crush, partner, or even a friend."
-              ghLink="https://github.com/pushkarraj7/Cupid-AI"
-              demoLink="https://cupidai.vercel.app/"
+              title="Employee Dashboard"
+              description="A comprehensive Employee Dashboard that helps manage attendance, tasks, leaves, and performance metrics in one place. Designed with a clean UI and interactive features to improve productivity and streamline HR processes."
+              ghLink="https://github.com/TurboJack07/hrms.relatix/tree/pushkar"
+              demoLink="https://hrms.relatix.io"
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nit}
+              isBlog={false}
+              title="Issue Connect"
+              description="The NIT Patna Staff Issue Resolution project is a web application that allows staff members to report and resolve departmental issues. It streamlines complaint submission, facilitates communication with departments, and ensures prompt resolutions for a better working environment at NIT Patna."
+              ghLink="https://github.com/pushkarraj7/nit-patna-client"
+              demoLink="https://nit-patna-complaint.vercel.app/"
             />
           </Col>
 
@@ -45,12 +57,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={nit}
+              imgPath={cupid}
               isBlog={false}
-              title="Issue Connect"
-              description="The NIT Patna Staff Issue Resolution project is a web application that allows staff members to report and resolve departmental issues. It streamlines complaint submission, facilitates communication with departments, and ensures prompt resolutions for a better working environment at NIT Patna."
-              ghLink="https://github.com/pushkarraj7/nit_patna"
-              demoLink="https://nit-patna.netlify.app/"              
+              title="Cupid AI"
+              description="Introducing the Pickup Line Generator, a fun and quirky website that uses the power of AI to generate cheesy pickup lines that are sure to make you smile. With just a click of a button, you can get a new pickup line to use on your crush, partner, or even a friend."
+              ghLink="https://github.com/pushkarraj7/Cupid-AI"
+              demoLink="https://cupidai.vercel.app/"
             />
           </Col>
 
@@ -73,17 +85,6 @@ function Projects() {
               description="HTML, CSS, SCSS, and JavaScript are the building blocks of the web, and I specialize in using these technologies to create beautiful and responsive websites. Whether you need a simple static site or a complex web application, I have the skills and experience to deliver a solution that meets your needs."
               ghLink="https://github.com/pushkarraj7/Codefolio"
               demoLink="https://pushkar-raj.netlify.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={shortly}
-              isBlog={false}
-              title="Shortly"
-              description="Our link shortener website allows you to easily transform long, cumbersome links into short and concise ones. We have created a user-friendly and efficient platform that enables you to share your favorite websites with ease."
-              ghLink="https://github.com/pushkarraj7/url-shortner"
-              demoLink="https://url-shortner-shortly.netlify.app/"
             />
           </Col>
         </Row>
